@@ -16,7 +16,7 @@ admin::~admin()
 {
     delete ui;
 }
-void admin::init()//不需要多解释
+void admin::init() // 不需要多解释
 {
     QSqlQueryModel *model=new QSqlQueryModel;
     QString sql;
@@ -50,7 +50,7 @@ void admin::on_pushButton_del_clicked()
     del=new dele;
     del->show();
 }
-void admin::find()//需要connect函数进行连接，每当输入框文本发生变化，就执行一边这个函数，而不需要手动点击什么按钮了
+void admin::find() //要connect函数进行连接，每当输入框文本发生变化，就执行一边这个函数，而不需要手动点击什么按钮了
 {
     QSqlQueryModel *modell=new QSqlQueryModel;
     QString find,sql0;
@@ -60,7 +60,7 @@ void admin::find()//需要connect函数进行连接，每当输入框文本发�
     ui->tableView->setModel(modell);
 
 }
-void admin::on_pushButton_order_clicked()//根据combobox显示的文字执行不同的语句
+void admin::on_pushButton_order_clicked() // 排序
 {
     QSqlQueryModel *modell=new QSqlQueryModel;
     QString find,sql0;
